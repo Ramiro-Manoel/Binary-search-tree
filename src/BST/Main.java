@@ -17,12 +17,16 @@ public class Main {
 		bst.add(16);
 		bst.add(14);
 
-		bst.gerarArqDot("arvore1.dot");
-
+		//bst.gerarArqDot("arvore1.dot");
+		System.out.println();
+		bst.inOrder();
+		
 		bst.delete(18);
 
-		bst.gerarArqDot("arvore2.dot");
-
+		//bst.gerarArqDot("arvore2.dot");
+		System.out.println();
+		bst.inOrder();
+		
 		bst.AlocateNode(10);
 
 		bst.add(13);
@@ -36,13 +40,17 @@ public class Main {
 		bst.add(1);
 		bst.add(17);
 		
-		bst.gerarArqDot("arvore3.dot");
+		//bst.gerarArqDot("arvore3.dot");
+		System.out.println();
+		bst.inOrder();
 		
 		bst.delete(13);
 		bst.delete(24);
 		bst.delete(19);
 		
-		bst.gerarArqDot("arvore4.dot");
+		//bst.gerarArqDot("arvore4.dot");
+		System.out.println();
+		bst.inOrder();
 		
 		bst.add(30);
 		bst.add(27);
@@ -50,12 +58,17 @@ public class Main {
 		bst.add(28);
 		bst.add(26);
 		
-		bst.gerarArqDot("arvore5.dot");
+		//bst.gerarArqDot("arvore5.dot");
+		System.out.println();
+		bst.inOrder();
 		
 		bst.delete(27);
 		bst.delete(20);
 		
-		bst.gerarArqDot("arvore6.dot");
+		//bst.gerarArqDot("arvore6.dot");
+		System.out.println();
+		bst.inOrder();
+		
 	}
 
 }

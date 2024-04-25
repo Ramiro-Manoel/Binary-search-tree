@@ -84,6 +84,18 @@ public class BinaryTree {
 		}
 		return searchMin(root.getLeft());
 	}
+	
+	public Node buscarMax() {
+		return searchMax(root);
+	}
+
+	private Node searchMax(Node root) {
+		if (root.getRight() == null) {
+			return root;
+		}
+		return searchMax(root.getRight());
+	}
+
 
 	public Node delete(int value) {
 		return deleteByMerging(value, root);
@@ -121,9 +133,8 @@ public class BinaryTree {
 			Node temp = new Node();
 			temp = root.getLeft();
 			// busca o nodo mais a direita do temporario
-			while (temp.getRight() != null) {
-				temp = temp.getRight();
-			}
+			temp = searchMax(temp);
+			
 			// define como nodo direta do temporario o nodo a direira do que deseja deletar
 			temp.setRight(root.getRight());
 
